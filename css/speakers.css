@@ -1,1 +1,51 @@
-@import "./base.css"
+@import "./base.css";
+body {
+  background-color: var(--color-secondary);
+  font-family: var(--font-family);
+  color: var(--color-primary);
+}
+
+.main {
+  padding: 150px;
+}
+.main__heading--secondary {
+  font-size: 128px;
+}
+
+.main__layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12rem;
+  align-items: center;
+}
+
+.main__layout--speaker {
+  width: 350px;
+  height: 350px;
+  border: 2px solid var(--color-primary);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  margin-top: 2rem;
+}
+
+.main__layout--speaker img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.main__layout--speaker-image-top {
+  object-position: top;
+}
+
+.main__layout--speaker-company {
+  color: var(--color-speaker-secondary);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
