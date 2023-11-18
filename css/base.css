@@ -77,3 +77,60 @@ a {
   background-color: var(--btn-bg-secondary);
   color: var(--btn-text-secondary);
 }
+
+/* for menu responsive: */
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row-reverse;
+  }
+
+  .header > div {
+    /* display: none; */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    left: -200%;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    transition: all 0.2s linear;
+  }
+  .header > div.active {
+    left: 0;
+  }
+
+  .header > div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .menu {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .menu:hover {
+    cursor: pointer;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
+}

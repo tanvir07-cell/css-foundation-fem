@@ -49,3 +49,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.02rem;
 }
+
+@media (max-width: 768px) {
+  .header > div {
+    background-color: #ff997a;
+    color: #000;
+  }
+}
